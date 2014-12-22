@@ -54,22 +54,6 @@ var bio = {
 var works = {
     "jobs": [
         {
-            "title": "Intern",
-            "employer": "Dassault Systèmes",
-            "year": "6 months",
-            "dates": "July 01st - December 19, 2014",
-            "city": "Velizy-Villacoublay",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "title": "Intern",
-            "employer": "Qarnot Computing",
-            "year": "1 month",
-            "dates": "July 01st - August 08, 2013",
-            "city": "Montrouge",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
             "employer": "Udacity",
             "title": "Course Developer",
             "location": "Mountain View, CA",
@@ -231,9 +215,9 @@ var education = {
             var url = HTMLonlineURL.replace('%data%', this.onlineClasses[online].url);
 
             var titleSchool = title + school;
-            $('#education h3').append(titleSchool);
-            $('#education h3').append(dates);
-            $('#education h3').append(url);
+            $('#education h2 h3').append(titleSchool);
+            $('#education h2 h3').append(dates);
+            $('#education h2 h3').append(url);
         }
 
     }
